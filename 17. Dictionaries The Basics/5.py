@@ -25,7 +25,7 @@ video_games_options["volume"] = 10
 
 print(video_games_options)
 
-words = ["danger", "beware", "danger"]
+words = ["danger", "beware", "danger", "beware", "danger", "beware", "danger", "beware"]
 
 def count_words(words):
     counts = {}
