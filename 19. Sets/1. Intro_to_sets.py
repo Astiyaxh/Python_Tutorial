@@ -1,3 +1,6 @@
+from numpy import square
+
+
 stocks = {"MSFT", "FB", "IBM", "FB"}
 print(type(stocks))
 print(stocks)
@@ -18,3 +21,15 @@ print("GOOG" in stocks)
 
 for number in prices:
     print(number)
+
+for number in lottery_numbers:
+    print(number)
+
+for numbers in lottery_numbers:
+    for number in numbers:
+        print(number)
+
+squares = { number ** 2 for number in [-5, -4, -3, 3, 4, 5] }
+print(squares)
+print(len(squares))
+

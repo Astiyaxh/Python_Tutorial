@@ -1,13 +1,10 @@
-def station_to_number(channels):
+from typing import Dict
+
+def station_to_number(channels: Dict[int, str]):
     return {station: number for number, station in channels.items()}
 
 
-channels = {
-    2: "CBS",
-    4: "NBC",
-    5: "FOX",
-    7: "ABC"
-}
+channels = {2: "CBS", 4: "NBC", 5: "FOX", 7: "ABC"}
 print(station_to_number(channels))
 
 
@@ -18,7 +15,7 @@ def coaster_conversion(my_dict):
 coaster = {
     "Kinda Ka": 139,
     "Top Thrill Dragster": 130,
-    "Superman: Escape From Krypton": 126
+    "Superman: Escape From Krypton": 126,
 }
 
 print(coaster_conversion(coaster))
