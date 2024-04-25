@@ -23,3 +23,29 @@ print(lunch_eater.squid)
 tuna_fan = SushiPlatter.tuna_lover()
 print(tuna_fan.salmon)
 print(tuna_fan.tuna)
+
+
+from datetime import date
+
+class Student():
+    def __init__(self, name, age):
+        self.name = name
+        self.age  = age
+
+    @classmethod
+    def calcaulate_age(cls, name, birth_year):
+         return cls(name, date.today().year - birth_year)
+
+    def show(self):
+        print(self.name + "'s age is: " + str(self.age))
+
+
+
+ariyan = Student("Ariyan", 20)
+ariyan.show()
+
+
+john = Student.calcaulate_age("John", 2000)
+john.show()
+
+
